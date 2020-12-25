@@ -1,0 +1,50 @@
+DDP_Copenhagen Housing Conditions Survey
+========================================================
+author: Nirmal Ghimire
+date: 12/24/2020
+width: 1440
+height: 1000
+transition: concave
+
+
+Introduction
+========================================================
+This is an interactive app that helps you predict the total number of residents (freq) based on,
+
+(i) renters satisfaction (High, Medium, or Low) of this living conditions based on,
+(ii) Infl: perceived degree of influence householders have on the management (High, Medium, or Low),
+(iii) Type: type of rental accommodation (Tower, Atrium, Apartment, Terrace), and
+(iv)Cont: the level of contact the residents afford with other residents (Low, High)
+
+This app has is classified in five sections.
+The first section is the topic section; second section is the introduction section; third section shows the summary of the data; fourth section shows the interactive plot where you can choose the variables of you interest to include in the model; and last section briefly discusses the findings.
+
+**Let's begin the journey!**
+
+Reading Data into the System
+========================================================
+```{r}
+data(mtcars)
+summary(mtcars)
+```
+
+Relationship between Variables
+========================================================
+
+```{r Plot, echo=F, message=F, warning=F, error=F}
+library(yarrr)
+par(mfrow=c(2,2))
+plot(wt~hp, data=mtcars, xlab="Horsepower", ylab="Weight", legend="hp")
+count<-table(mtcars$cyl)
+barplot(count, xlab= "Cylinder Type", ylab="Weight", col=(c("darkgreen", "pink", "gold")))
+pirateplot(wt~carb, data=mtcars, pal="info", theme=4, xlab="Carburator", ylab="Weight")
+boxplot(wt~gear, data=mtcars, xlab="Gear Type", ylab="Weight")
+```
+
+Linear Regression Model
+========================================================
+```{r}
+mymod<-lm(wt~., data=mtcars)
+summary(mymod)
+```
+
