@@ -1,6 +1,6 @@
-# DDP_Housing Condition Survey
-This is an interactive app that helps you predict the total number of residents (freq) based on, (i) renters satisfaction (High, Medium, or Low) of this living conditions based on, (ii) Infl: perceived degree of influence householders have on the management (High, Medium, or Low), (iii) Type: type of rental accommodation (Tower, Atrium, Apartment, Terrace), and (iv)Cont: the level of contact the residents afford with other residents (Low, High)
+# Predicting Reading Skills Through Metacognitive Strategies
+## Objective and Purpose 
+Building on the premise that metacognitive reading strategies are pivotal in developing proficient readers, this study delves into students’ awareness and control over their own cognitive processes during reading. The study tests an array of variables including demographic information, teacher-guided reading activities, students’ attitudes towards reading and their habits, self-guided metacognitive activities, school characteristics, and self-assessment of reading skills. Our aim is to predict the range of metacognitive reading strategies employed by students and identify potential influences and patterns among these strategies. 
 
-This app has is classified in five sections. The first section is the topic section; second section is the introduction section; third section shows the summary of the data; fourth section shows the interactive plot where you can choose the variables of you interest to include in the model; and last section briefly discusses the findings. 
+This study’s findings will enrich the field of education by delivering an empirically grounded model that explains the relationship between various influential factors and metacognitive reading strategies. This will aid in developing hypotheses regarding variations in the use of these strategies among students and offer criteria for designing future studies addressing the causes of these differences.  
 
-Let's begin the journey!
